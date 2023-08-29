@@ -1,0 +1,8 @@
+/.idea
+/GrpcServer/bin
+/GrpcServer/obj
+/GrpcVsHttpBenchmark/bin
+/GrpcVsHttpBenchmark/obj
+/HttpServer/bin
+/HttpServer/obj
+/.vs

@@ -1,0 +1,15 @@
+version: '4'
+
+services:
+  http-server:
+    build: 
+      context: .
+      dockerfile: ./HttpServer/Dockerfile
+    ports:
+      - "5000:5000"
+  grpc-server:
+    build:
+      context: .
+      dockerfile: ./GrpcServer/Dockerfile
+    ports:
+      - "5001:5001"

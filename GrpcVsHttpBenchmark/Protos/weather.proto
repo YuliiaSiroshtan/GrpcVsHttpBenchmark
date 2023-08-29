@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "GrpcServer";
+
+package weather;
+
+service Weather {
+    rpc GetById (WeatherRequest) returns (WeatherResponse);
+}
+
+message WeatherRequest {
+    int32 id = 1;
+}
+
+message WeatherResponse {
+    int32 temperature_c = 1;
+    string summary = 2;
+}
